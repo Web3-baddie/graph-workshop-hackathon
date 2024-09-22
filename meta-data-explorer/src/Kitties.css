@@ -1,0 +1,90 @@
+/* General Styles for the whole container */
+.kitties-container {
+  background-image: url('https://s3-eu-west-1.amazonaws.com/1inch-io-stage-blog-euw1/md-content/images/max/800/1-mmamvg_nl5ewa7ebxmo_4q.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the container with the background image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the container covers the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 20px; /* Reduce margin below header */
+}
+
+header h1 {
+  font-size: 2rem; /* Smaller heading size */
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+/* Section styling (Contracts and Accounts) */
+section {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
+  max-width: 600px; /* Limit the width to make it smaller */
+  width: 100%; /* Ensure section is responsive */
+  text-align: center; /* Center the text */
+}
+
+/* List styling */
+section ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex;
+  flex-direction: column; /* Stack the list items vertically */
+  gap: 10px; /* Space between list items */
+  justify-content: center; /* Center the list items */
+}
+
+/* Contract and Account List Items */
+section li {
+  background: rgba(255, 255, 255, 0.1); /* Subtle background for list items */
+  padding: 10px;
+  width: auto; /* Auto width to fit content */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #f0f0f0;
+}
+
+li h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #FFD700; /* Gold color for headings */
+}
+
+li p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #d3d3d3;
+}

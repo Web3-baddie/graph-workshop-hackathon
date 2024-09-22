@@ -1,0 +1,15 @@
+{
+  "name": "meta-data-explorer",
+  "version": "1.0.0",
+  "description": "Subgraph for exploring CryptoKitties NFT metadata",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@graphprotocol/graph-cli": "^0.21.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}

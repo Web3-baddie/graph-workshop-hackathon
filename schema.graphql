@@ -1,0 +1,20 @@
+type Query {
+  kitties(first: Int, skip: Int): [Kitty!]!
+}
+
+type Kitty @entity {
+  id: ID!
+  kittyId: BigInt!
+  generation: Int!
+  genes: BigInt!
+  birthTime: BigInt!
+  owner: Owner!
+  metadata: String! # Stores metadata like colors, personality traits, etc.
+}
+
+type Owner @entity {
+  id: ID!
+  address: Bytes!
+  kitties: [Kitty!]! @derivedFrom(field: "owner")
+}
+
